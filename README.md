@@ -1,0 +1,2 @@
+# pandas_duckdb
+pandasをduckdbと併用して高速化を試すデモアプリ
