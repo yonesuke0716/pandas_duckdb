@@ -1,0 +1,13 @@
+services:
+  pandas_duckdb:
+    container_name: pandas_duckdb
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: pandas_duckdb
+    volumes:
+      - ./src:/app
+    tty: true
+    ports:
+      - 8501:8501
+
