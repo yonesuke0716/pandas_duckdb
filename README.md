@@ -38,3 +38,7 @@ docker compose down
 ```
 
 
+## 参考
+
+### Python Example
+https://github.com/duckdb/duckdb/blob/main/examples/python/duckdb-python.py
