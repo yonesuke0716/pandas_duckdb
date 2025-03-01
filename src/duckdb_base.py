@@ -24,7 +24,9 @@ start = time.time()
 if not os.path.exists("csv/diabetes_data.csv"):
     st.error("csv/diabetes_data.csvが存在しません。データを作成してください。")
     st.stop()
-read_df = duckdb.read_csv("csv/diabetes_data.csv").to_df()
+
+conn = duckdb.connect()
+read_df = conn.read_csv("csv/diabetes_data.csv").to_df()
 
 renderer = get_pyg_renderer(read_df)
 
